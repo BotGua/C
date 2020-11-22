@@ -105,7 +105,7 @@ if (text.includes('#nulis')){
 
 
 if (text.includes("#say")){
-  const teks = text.replace(#say /, "")
+  const teks = text.replace(!say /, "")
 conn.sendMessage(id, teks, MessageType.text)
 }
 
