@@ -354,7 +354,7 @@ const get = require('got')
     var meninggal = (body[0]['meninggal']);
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
-    conn.sendMessage(id,`📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n📍Positif ==> ${positif} \n📍Sembuh ==> ${sembuh} \n📍Meninggal ==> ${meninggal}\n📍Dirawat ==> ${dirawat}`, MessageType.text);
+    conn.sendMessage(id,`⚠️DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n⚠️Positif ==> ${positif} \n⚠️Sembuh ==> ${sembuh} \n⚠️Meninggal ==> ${meninggal}\n⚠️Dirawat ==> ${dirawat}`, MessageType.text);
 }
    if (text.includes("!quotes"))
    {
