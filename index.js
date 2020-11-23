@@ -86,7 +86,76 @@ conn.on('message-new', async(m) =>
    const messageType = Object.keys(messageContent)[0] // message will always contain one key signifying what kind of message
    let imageMessage = m.message.imageMessage;
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
-
+	
+//chat
+if (text == 'halo')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == 'hai')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'assalamualaikum')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'bro')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == 'p')
+{
+conn.sendMessage(id, tambahan.p ,MessageType.text);
+}
+else if (text == 'test')
+{
+  conn.sendMessage(id, tambahan.test, MessageType.text);
+}
+else if (text == 'HALO')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == 'Halo')
+{
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
+}
+else if (text == 'Hai')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'Assalamualaikum')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'Bro')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == 'P')
+{
+conn.sendMessage(id, tambahan.p ,MessageType.text);
+}
+else if (text == 'Test')
+{
+  conn.sendMessage(id, tambahan.test, MessageType.text);
+}
+else if (text == 'HAI')
+{
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'ASSALAMUALAIKUM')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
+}
+else if (text == 'BRO')
+{
+conn.sendMessage(id, tambahan.bro ,MessageType.text);
+}
+else if (text == 'TEST')
+{
+  conn.sendMessage(id, tambahan.test, MessageType.text);
+}
 
 // Fitur
 
