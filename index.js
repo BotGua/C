@@ -108,7 +108,7 @@ else if (text == 'p')
 {
 conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
-else if (text == 'test')
+else if (text == '#join')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
@@ -136,7 +136,7 @@ else if (text == 'P')
 {
 conn.sendMessage(id, tambahan.p ,MessageType.text);
 }
-else if (text == 'Test')
+else if (text == '#Join')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
@@ -152,7 +152,7 @@ else if (text == 'BRO')
 {
 conn.sendMessage(id, tambahan.bro ,MessageType.text);
 }
-else if (text == 'TEST')
+else if (text == '#JOIN')
 {
   conn.sendMessage(id, tambahan.test, MessageType.text);
 }
