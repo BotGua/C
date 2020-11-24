@@ -15,7 +15,6 @@ const urlencode = require("urlencode");
 const axios = require("axios");
 const menu = require("./lib/menu.js");
 const donasi = require("./lib/donasi.js");
-
 const info = require("./lib/info.js");
 /////////////////
 const BotName = 'Akb4r™'; 
