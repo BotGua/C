@@ -90,9 +90,7 @@ conn.on('message-new', async(m) =>
 //chat
 	
 
-else if  (text == 'assalamualaikum'){
-conn.sendMessage(id, '3aalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #menu ya say..' ,MessageType.text);
-}
+
 else if (text == 'salam'){
 conn.sendMessage(id, 'Waalaikumsalam, ada yang bisa saya bantu? kalo bingung ketik #menu ya say..' ,MessageType.text);
 }
