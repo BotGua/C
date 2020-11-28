@@ -775,7 +775,64 @@ if (text.includes("#pokemon"))
     });
 
     }
+	
+if (is == '#katabijak')
 
+      {
+
+         fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/katabijax.txt')
+
+            .then(res => res.text())
+
+            .then(body =>
+
+            {
+
+               let tod = body.split("\n");
+
+               let pjr = tod[Math.floor(Math.random() * tod.length)];
+
+               let randombijak = pjr.replace(/pjrx-line/g, "\n");
+
+               conn.sendMessage(id, randombijak, MessageType.text)
+
+            });
+
+      }   
+
+   }
+
+   if (messageType === MessageType.text)
+
+   {
+
+      let is = m.message.conversation.toLocaleLowerCase()
+
+      if (is == '#fakta')
+
+      {
+
+         fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/faktaunix.txt')
+
+            .then(res => res.text())
+
+            .then(body =>
+
+            {
+
+               let tod = body.split("\n");
+
+               let pjr = tod[Math.floor(Math.random() * tod.length)];
+
+               let randomnix = pjr.replace(/pjrx-line/g, "\n");
+
+               conn.sendMessage(id, randomnix, MessageType.text)
+
+            });
+
+      }   
+
+   }
 
 
 
