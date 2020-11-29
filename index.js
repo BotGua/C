@@ -707,7 +707,7 @@ if (is == '##katabijak')
                let randombijak = pjr.replace(/pjrx-line/g, "\n");
                conn.sendMessage(id, randombijak, MessageType.text)
 		 
-            })
+            });
       }   
    
    if (messageType === MessageType.text)
