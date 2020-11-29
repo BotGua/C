@@ -637,206 +637,122 @@ if (text.includes("#alay")){
 	})
 }
 	
-if (text.includes("#hentai"))
+if (text.includes("!loli"))
    {
-    var items = ["nsfwneko","anime hentai"];
-    var anim = items[Math.floor(Math.random() * items.length)];
-    var url = "https://api.computerfreaker.cf/v1/";
-    
-    axios.get(url)
-      .then((result) => {
-        var b = JSON.parse(JSON.stringify(result.data));
-        var anim =  b[Math.floor(Math.random() * b.length)];
-        imageToBase64(anim) // Path to the image
-        .then(
-            (response) => {
-	var buf = Buffer.from(response, 'base64'); // Ta-da	
-              conn.sendMessage(
-            id,
-              buf,MessageType.image)
-       
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error); // Logs an error if there was one
-            }
-        )
-    
-    });
-    }
-	
-if (text.includes("#loli"))
-
-   {
-
     var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you"];
-
     var nime = items[Math.floor(Math.random() * items.length)];
-
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
-
     
-
     axios.get(url)
-
       .then((result) => {
-
         var n = JSON.parse(JSON.stringify(result.data));
-
         var nimek =  n[Math.floor(Math.random() * n.length)];
-
         imageToBase64(nimek) 
-
         .then(
-
             (response) => {
-
 	var buf = Buffer.from(response, 'base64'); 
-
               conn.sendMessage(
-
             id,
-
               buf,MessageType.image)
-
        
-
             }
-
         )
-
         .catch(
-
             (error) => {
-
                 console.log(error);
-
             }
-
         )
-
     
-
     });
-
     }
-	
-if (text.includes("#pokemon"))
-
+    
+if (text.includes("!pokemon"))
    {
-
     var items = ["anime pokemon"];
-
     var nime = items[Math.floor(Math.random() * items.length)];
-
     var url = "https://api.fdci.se/rep.php?gambar=" + nime;
-
     
-
     axios.get(url)
-
       .then((result) => {
-
         var n = JSON.parse(JSON.stringify(result.data));
-
         var nimek =  n[Math.floor(Math.random() * n.length)];
-
         imageToBase64(nimek) 
-
         .then(
-
             (response) => {
-
-	var buf = Buffer.from(response, 'base64');               conn.sendMessage(
-
+	var buf = Buffer.from(response, 'base64'); 
+              conn.sendMessage(
             id,
-
               buf,MessageType.image)
-
        
-
             }
-
         )
-
         .catch(
-
             (error) => {
-
                 console.log(error);
-
             }
-
         )
-
     
-
     });
-
     }
-	
-if (is == '#katabijak')
-
+  
+if (is == '!katabijak')
       {
 
          fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/katabijax.txt')
-
             .then(res => res.text())
-
             .then(body =>
-
             {
-
                let tod = body.split("\n");
-
                let pjr = tod[Math.floor(Math.random() * tod.length)];
-
                let randombijak = pjr.replace(/pjrx-line/g, "\n");
-
                conn.sendMessage(id, randombijak, MessageType.text)
-
             });
-
       }   
-
    }
-
    if (messageType === MessageType.text)
-
    {
-
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '#fakta')
-
+      if (is == '!fakta')
       {
 
          fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/faktaunix.txt')
-
             .then(res => res.text())
-
             .then(body =>
-
             {
-
                let tod = body.split("\n");
-
                let pjr = tod[Math.floor(Math.random() * tod.length)];
-
                let randomnix = pjr.replace(/pjrx-line/g, "\n");
-
                conn.sendMessage(id, randomnix, MessageType.text)
-
             });
-
       }   
-
    }
+   
+        
 
-})
 
-}
+        
+
+            
+
+                
+
+            
+
+        
+
+    
+
+    
+
+   
+	
+
+
+      
+
+    
+
 
 
 
