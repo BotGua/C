@@ -706,9 +706,10 @@ if (is == '##katabijak')
                let pjr = tod[Math.floor(Math.random() * tod.length)];
                let randombijak = pjr.replace(/pjrx-line/g, "\n");
                conn.sendMessage(id, randombijak, MessageType.text)
-            });
+		 
+            })
       }   
-   }
+   
    if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
@@ -724,6 +725,7 @@ if (is == '##katabijak')
                let pjr = tod[Math.floor(Math.random() * tod.length)];
                let randomnix = pjr.replace(/pjrx-line/g, "\n");
                conn.sendMessage(id, randomnix, MessageType.text)
+		 
             })
       }   
    
