@@ -627,14 +627,14 @@ if (text.includes("#lirik")){
 	     conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
 	 	let hasil = `📍lirik lagu📍${teks} \n\n\n ${res.data.result.lirik}`
 	conn.sendMessage(id, hasil, MessageType.text)
-	})
+	});
 }
 if (text.includes("#alay")){
 	const alay = text.split("#alay")[1]
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
 		{ let hasil = `${res.data.text}`
 		conn.sendMessage(id, hasil, MessageType.text)
-	})
+	});
 }
 	
 if (text.includes("#loli"))
