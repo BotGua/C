@@ -86,6 +86,24 @@ conn.on('message-new', async(m) =>
    let imageMessage = m.message.imageMessage;
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
 
+// Groups
+
+if (text.includes("!buatgrup"))
+   {
+var nama = text.split("!buatgrup")[1].split("-nomor")[0];
+var nom = text.split("-nomor")[1];
+var numArray = nom.split(",");
+for ( var i = 0; i < numArray.length; i++ ) {
+    numArray[i] = numArray[i] +"@s.whatsapp.net";
+}
+var str = numArray.join("");
+console.log(str)
+const group = await conn.groupCreate (nama, str)
+console.log ("created group with id: " + group.gid)
+conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say hello to everyone on the group
+
+}
+
 
 // Fitur
 
