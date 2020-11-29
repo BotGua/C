@@ -637,7 +637,7 @@ if (text.includes("#alay")){
 	})
 }
 	
-if (text.includes("!loli"))
+if (text.includes("#loli"))
    {
     var items = ["anime loli","anime loli sange","anime loli fackgirll","anime loli i love you"];
     var nime = items[Math.floor(Math.random() * items.length)];
@@ -666,7 +666,7 @@ if (text.includes("!loli"))
     });
     }
     
-if (text.includes("!pokemon"))
+if (text.includes("#pokemon"))
    {
     var items = ["anime pokemon"];
     var nime = items[Math.floor(Math.random() * items.length)];
@@ -695,7 +695,7 @@ if (text.includes("!pokemon"))
     });
     }
   
-if (is == '!katabijak')
+if (is == '##katabijak')
       {
 
          fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/katabijax.txt')
@@ -713,7 +713,7 @@ if (is == '!katabijak')
    {
       let is = m.message.conversation.toLocaleLowerCase()
 
-      if (is == '!fakta')
+      if (is == '#fakta')
       {
 
          fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/faktaunix.txt')
@@ -729,10 +729,10 @@ if (is == '!katabijak')
    }
    
         
-
+//END
 
         
-
+})
             
 
                 
@@ -759,7 +759,7 @@ if (is == '!katabijak')
 
 
 
-//end
 
 
-})
+
+
