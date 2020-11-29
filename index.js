@@ -724,9 +724,9 @@ if (is == '##katabijak')
                let pjr = tod[Math.floor(Math.random() * tod.length)];
                let randomnix = pjr.replace(/pjrx-line/g, "\n");
                conn.sendMessage(id, randomnix, MessageType.text)
-            });
+            })
       }   
-   }
+   
    
         
 //END
